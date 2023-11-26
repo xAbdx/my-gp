@@ -1,12 +1,13 @@
 import React from 'react';
 import './Askme.css';
-import Header from '../../components/Header/Header';
+import ResponsiveAppBar from '../../components/Navbar/ResponsiveAppBar';
 // import Footer from "../../components/footer/footer";
 
 const Askme = () => {
     return (
         <div>
-            <Header />
+            <ResponsiveAppBar />
+
             tesdsaf
             {/* <Footer /> */}
         </div>

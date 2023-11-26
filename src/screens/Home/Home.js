@@ -1,12 +1,12 @@
 import React from 'react';
 import './Home.css';
-import Header from '../../components/Header/Header';
+import ResponsiveAppBar from '../../components/Navbar/ResponsiveAppBar';
 // import Footer from "../../components/footer/footer";
 
 const Home = () => {
     return (
         <div>
-            <Header />
+            <ResponsiveAppBar />
             {/* <Footer /> */}
         </div>
     );
