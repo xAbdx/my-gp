@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 12vh;
 }
 
 .logo {
@@ -26,19 +27,19 @@ body {
     margin: 0 60px 0 0;
 }
 
-.link {
-    margin: 0 20px 0 0;
-    border-bottom: 1px black;
+.link1 {
+    margin: 0 40px 0 0;
+    border-bottom: 2px solid rgb(146, 146, 146);
+    border-radius: 50px;
+    border-image: linear-gradient(to right, #000 50%, transparent 50%) 100% 1;
 }
 
-a {
+.link {
+    margin: 0 20px 0 0;
+}
+
+/* a {
     color: black;
     font-weight: 500;
     text-decoration: none;
-}
-
-
-.MuiButtonBase-root-MuiButton-root {
-    border-radius: 20px;
-    font-size: 100px;
-}
+} */
