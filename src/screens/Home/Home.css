@@ -1,0 +1,40 @@
+.container {
+    margin: 0;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.left .text {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.arrowDiv .textArrow {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.arrowDiv {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    width: 50%
+}
+
+.rightSmaller {
+    width: 85%
+}
+
+.smaller {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
