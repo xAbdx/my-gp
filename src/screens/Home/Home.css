@@ -1,8 +1,14 @@
+.containerHero {
+    max-width: 80%;
+    margin: auto;
+}
+
 .container {
     margin: 0;
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .left .title {
@@ -20,10 +26,10 @@
     font-weight: bold;
 }
 
-.arrowDiv {
+/* .arrowDiv {
     display: flex;
     align-items: center;
-}
+} */
 
 .right {
     width: 50%
@@ -33,8 +39,49 @@
     width: 85%
 }
 
+.titleSmall {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.textSmall {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
 .smaller {
     display: flex;
+    flex-direction: column;
+}
+
+.suggested {
+    padding: 25px 0 0 0;
+}
+
+.suggestedSpan {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sort {
+    margin: 10px 0 0 0;
+}
+
+.sort span {
+    margin: 0 15px 0 0;
+}
+
+.cardCards {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column-reverse;
+    margin-top: 10px;
+}
+
+.cardSection {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
 }
