@@ -1,6 +1,9 @@
 .containerHero {
-    max-width: 80%;
+    width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -22,8 +25,10 @@
 }
 
 .arrowDiv .textArrow {
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: .8rem;
+    /* font-weight: 500; */
+    margin: 100px 0 0 -5px;
+
 }
 
 /* .arrowDiv {
@@ -75,13 +80,14 @@
 
 .cardCards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 10px;
 }
 
 .cardSection {
-    margin: 30px 0;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
