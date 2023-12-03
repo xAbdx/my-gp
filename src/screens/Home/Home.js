@@ -267,6 +267,7 @@ const Home = () => {
                     </div>
                 </Box>
             </div>
+
             {/* <Footer /> */}
 
         </div>
