@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React, { useRef } from 'react';
 import './Home.css';
 import ResponsiveAppBar from '../../components/Navbar/ResponsiveAppBar';
@@ -14,6 +15,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 // import Footer from "../../components/footer/footer";
 
 
@@ -133,9 +135,9 @@ const Home = () => {
                         </div>
                     </div>
                 </Box>
-                <Box class="displayCardSection">
+                <Box sx={{ display: { xs: 'flex', justifyContent: 'center' } }}>
                     <div class="cardSection">
-                        <Card sx={{ maxWidth: '250px', bgcolor: '#F8F8F8', margin: '40px 40px 40px 0' }}>
+                        <Card sx={{ width: '250px', bgcolor: '#F8F8F8', margin: '40px 40px 40px 0', borderRadius: '10%', boxShadow: 0 }}>
                             <CardContent>
                                 <Typography variant="h3" component="div" sx={{
                                     fontWeight: 'bold',
@@ -144,8 +146,8 @@ const Home = () => {
                                     Plan A
                                 </Typography>
                                 <div class="cardCards">
-                                    <Card sx={{ width: '40%', bgcolor: '#F1F1F1' }}>
-                                        <CardContent>
+                                    <div class="cardItem">
+                                        <CardContent sx={{ bgcolor: '#F1F1F1', borderRadius: '10%' }}>
                                             <Typography variant="body2" component="div" sx={{
                                                 display: 'flex',
                                                 justifyContent: 'center',
@@ -157,9 +159,9 @@ const Home = () => {
                                                 3 - 4 h
                                             </Typography>
                                         </CardContent>
-                                    </Card>
-                                    <Card sx={{ width: '40%', bgcolor: '#F1F1F1' }}>
-                                        <CardContent>
+                                    </div>
+                                    <div class="cardItem">
+                                        <CardContent sx={{ bgcolor: '#F1F1F1', borderRadius: '10%' }}>
                                             <Typography variant="body2" component="div" sx={{
                                                 display: 'flex',
                                                 justifyContent: 'center',
@@ -171,14 +173,14 @@ const Home = () => {
                                                 250 $
                                             </Typography>
                                         </CardContent>
-                                    </Card>
+                                    </div>
                                 </div>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'end' }}>
                                 <Button size="small" endIcon={<ChevronRightIcon />}>Learn More </Button>
                             </CardActions>
                         </Card>
-                        <Card sx={{ maxWidth: '250px', bgcolor: '#F8F8F8', margin: '40px 40px 40px 0' }}>
+                        <Card sx={{ width: '250px', bgcolor: '#F8F8F8', margin: '40px 40px 40px 0', borderRadius: '10%', boxShadow: 0 }}>
                             <CardContent>
                                 <Typography variant="h3" component="div" sx={{
                                     fontWeight: 'bold',
@@ -187,8 +189,8 @@ const Home = () => {
                                     Plan B
                                 </Typography>
                                 <div class="cardCards">
-                                    <Card sx={{ width: '40%', bgcolor: '#F1F1F1' }}>
-                                        <CardContent>
+                                    <div class="cardItem">
+                                        <CardContent sx={{ bgcolor: '#F1F1F1', borderRadius: '10%' }}>
                                             <Typography variant="body2" component="div" sx={{
                                                 display: 'flex',
                                                 justifyContent: 'center',
@@ -200,9 +202,9 @@ const Home = () => {
                                                 3 - 4 h
                                             </Typography>
                                         </CardContent>
-                                    </Card>
-                                    <Card sx={{ width: '40%', bgcolor: '#F1F1F1' }}>
-                                        <CardContent>
+                                    </div>
+                                    <div class="cardItem">
+                                        <CardContent sx={{ bgcolor: '#F1F1F1', borderRadius: '10%' }}>
                                             <Typography variant="body2" component="div" sx={{
                                                 display: 'flex',
                                                 justifyContent: 'center',
@@ -214,14 +216,14 @@ const Home = () => {
                                                 250 $
                                             </Typography>
                                         </CardContent>
-                                    </Card>
+                                    </div>
                                 </div>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'end' }}>
                                 <Button size="small" endIcon={<ChevronRightIcon />}>Learn More </Button>
                             </CardActions>
                         </Card>
-                        <Card sx={{ maxWidth: '250px', bgcolor: '#F8F8F8', margin: '40px 40px 40px 0' }}>
+                        <Card sx={{ width: '250px', bgcolor: '#F8F8F8', margin: '40px 40px 40px 0', borderRadius: '10%', boxShadow: 0 }}>
                             <CardContent>
                                 <Typography variant="h3" component="div" sx={{
                                     fontWeight: 'bold',
@@ -230,8 +232,8 @@ const Home = () => {
                                     Plan C
                                 </Typography>
                                 <div class="cardCards">
-                                    <Card sx={{ width: '40%', bgcolor: '#F1F1F1' }}>
-                                        <CardContent>
+                                    <div class="cardItem">
+                                        <CardContent sx={{ bgcolor: '#F1F1F1', borderRadius: '10%' }}>
                                             <Typography variant="body2" component="div" sx={{
                                                 display: 'flex',
                                                 justifyContent: 'center',
@@ -243,9 +245,9 @@ const Home = () => {
                                                 3 - 4 h
                                             </Typography>
                                         </CardContent>
-                                    </Card>
-                                    <Card sx={{ width: '40%', bgcolor: '#F1F1F1' }}>
-                                        <CardContent>
+                                    </div>
+                                    <div class="cardItem">
+                                        <CardContent sx={{ bgcolor: '#F1F1F1', borderRadius: '10%' }}>
                                             <Typography variant="body2" component="div" sx={{
                                                 display: 'flex',
                                                 justifyContent: 'center',
@@ -257,7 +259,7 @@ const Home = () => {
                                                 250 $
                                             </Typography>
                                         </CardContent>
-                                    </Card>
+                                    </div>
                                 </div>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'end' }}>
@@ -267,7 +269,52 @@ const Home = () => {
                     </div>
                 </Box>
             </div>
-
+            <Box sx={{
+                width: '100%',
+                minHeight: '700px',
+                bgcolor: '#F8F8F8',
+                display: 'flex',
+                justifyContent: 'start',
+                paddingTop: '50px',
+                flexDirection: 'column',
+                alignItems: 'center',
+            }}>
+                <p class="titleSThree">Must-visit attractions</p>
+                <div class="mapSection">
+                    <div>
+                        <iframe
+                            class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.9884008118115!2d35.1079238669784!3d31.524478523397136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502e41c1ec1f1bb%3A0xf50b20561ca781c3!2sIbrahimi%20Mosque!5e0!3m2!1sen!2s!4v1701627915571!5m2!1sen!2s"
+                            width="400"
+                            height="250"
+                            style={{ border: "0", borderRadius: '3%' }}
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="mapContent">
+                        <h5>Ibrahimi Mosque</h5>
+                        <p>Al Ibrahimi Mosque is the world's oldest sacred building still in use today in a practically continuous manner. It is believed to hold the remains of God's prophet Abraham, his wife Sarah, their son Isaac and grandson Jacob, and their wives Rebecca and Leah</p>
+                        <div class="contentWraper">
+                            <div class="insideContentWraper">
+                                <h6>Price</h6>
+                                <p><AttachMoneyIcon sx={{ color: '#267E02' }} />free entry</p>
+                            </div>
+                            <div>
+                                <h6>Time</h6>
+                                <p><AccessTimeIcon sx={{ color: '#F96719' }} /> 1h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style={{
+                    color: '#777777',
+                    backgroundColor: '#777777',
+                    height: 1.4,
+                    width: '60%',
+                }} />
+            </Box>
             {/* <Footer /> */}
 
         </div>

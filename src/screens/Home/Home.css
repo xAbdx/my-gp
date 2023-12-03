@@ -88,6 +88,46 @@
 .cardSection {
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.cardItem {
+    width: 44%;
+}
+
+.titleSThree {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mapSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.mapContent {
+    max-width: 30%;
+    margin: 0 0 0 50px;
+}
+
+.map {
+    box-shadow: 5px 5px 10px 0px rgba(77, 77, 77, 0.3);
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(77, 77, 77, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(77, 77, 77, 0.3);
+}
+
+.contentWraper {
+    display: flex;
+    align-items: center;
+}
+
+.insideContentWraper {
+    margin-right: 50px;
+}
+
+hr {
+    color: #B6B6B6;
 }
