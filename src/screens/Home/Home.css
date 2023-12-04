@@ -113,6 +113,23 @@
     margin: 0 0 0 50px;
 }
 
+@media only screen and (max-width: 750px) {
+    .mapContent {
+        max-width: 70%;
+        margin: 0 0 20px 0;
+    }
+
+    .mapSection {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .map {
+        width: 350px;
+    }
+}
+
 .map {
     box-shadow: 5px 5px 10px 0px rgba(77, 77, 77, 0.3);
     -webkit-box-shadow: 5px 5px 10px 0px rgba(77, 77, 77, 0.3);
