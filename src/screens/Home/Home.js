@@ -16,7 +16,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-// import Footer from "../../components/footer/footer";
+import Footer from "../../components/Footer/Footer";
 
 
 const Home = () => {
@@ -132,7 +132,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div class="right">
-                            <Lottie LottieRef={picnicRef} animationData={animationData} />
+                            <Lottie className='lottieImg' LottieRef={picnicRef} animationData={animationData} />
                         </div>
                     </div>
                 </Box>
@@ -290,7 +290,7 @@ const Home = () => {
                 paddingTop: '50px',
                 flexDirection: 'column',
                 alignItems: 'center',
-                paddingBottom: '50px'
+                paddingBottom: '70px'
             }}>
                 <p class="titleSThree">Must-visit attractions</p>
                 <div class="mapSection">
@@ -393,7 +393,8 @@ const Home = () => {
                     </div>
                 </div>
             </Box>
-            {/* <Footer /> */}
+            {/* Footer Section */}
+            <Footer />
 
         </div>
     );
