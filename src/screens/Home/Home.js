@@ -21,7 +21,6 @@ import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
     const picnicRef = useRef();
-
     return (
         <div>
             <ResponsiveAppBar />
@@ -395,7 +394,6 @@ const Home = () => {
             </Box>
             {/* Footer Section */}
             <Footer />
-
         </div>
     );
 }
