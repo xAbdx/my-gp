@@ -36,7 +36,7 @@ function ResponsiveAppBar() {
     }
 
     return (
-        <AppBar position="static" sx={{ bgcolor: "#fff" }} elevation={0} disableRipple>
+        <AppBar position="static" sx={{ bgcolor: "inherit" }} elevation={0} disableRipple>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <img class="logo" src={Logo} width="200px" alt="img" onClick={redirectLogo}></img>

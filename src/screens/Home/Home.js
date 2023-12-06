@@ -12,12 +12,12 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import { NavLink } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-
 
 const Home = () => {
     const picnicRef = useRef();
@@ -181,7 +181,9 @@ const Home = () => {
                                 </div>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'end' }}>
-                                <Button size="small" endIcon={<ChevronRightIcon />}>Learn More </Button>
+                                <NavLink to="plan-a">
+                                    <Button size="small" endIcon={<ChevronRightIcon />}>Learn More </Button>
+                                </NavLink>
                             </CardActions>
                         </Card>
                         <Card sx={{ width: '250px', bgcolor: '#F8F8F8', margin: '40px 40px 40px 0', borderRadius: '10%', boxShadow: 0 }}>
@@ -227,7 +229,9 @@ const Home = () => {
                                 </div>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'end' }}>
-                                <Button size="small" endIcon={<ChevronRightIcon />}>Learn More </Button>
+                                <NavLink to="plan-b">
+                                    <Button size="small" endIcon={<ChevronRightIcon />}>Learn More </Button>
+                                </NavLink>
                             </CardActions>
                         </Card>
                         <Card sx={{ width: '250px', bgcolor: '#F8F8F8', margin: '40px 40px 40px 0', borderRadius: '10%', boxShadow: 0 }}>
@@ -273,7 +277,9 @@ const Home = () => {
                                 </div>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'end' }}>
-                                <Button size="small" endIcon={<ChevronRightIcon />}>Learn More </Button>
+                                <NavLink to="plan-c">
+                                    <Button size="small" endIcon={<ChevronRightIcon />}>Learn More </Button>
+                                </NavLink>
                             </CardActions>
                         </Card>
                     </div>

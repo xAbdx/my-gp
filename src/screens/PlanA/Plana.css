@@ -1,0 +1,49 @@
+.rootBg {
+    background-color: #F8F4EC;
+}
+
+.heroContent {
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heroContentRightItems {
+    display: flex;
+}
+
+.titleA {
+    font-weight: bold;
+}
+
+.leftC {
+    margin-right: 40px;
+}
+
+.leftC p {
+    font-size: 1.1rem;
+}
+
+.RightC p {
+    font-size: 1.1rem;
+}
+
+.leftIcon {
+    display: flex;
+}
+
+.leftIcon p {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.startOff {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.startOff h3 {
+    margin-right: 10px;
+}
