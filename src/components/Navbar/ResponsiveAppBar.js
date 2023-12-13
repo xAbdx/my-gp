@@ -16,7 +16,7 @@ import './ResponsiveAppBar.css';
 
 const pages = [
     <NavLink to="/">Home</NavLink>,
-    <NavLink to="ask-me">Ask Me</NavLink>
+    <NavLink to="/ask-me">Ask Me</NavLink>
 ];
 
 function ResponsiveAppBar() {
@@ -91,7 +91,7 @@ function ResponsiveAppBar() {
                                 }}
                                 to="/">Home</NavLink></li>
                             <li class="link">
-                                <NavLink to="ask-me">
+                                <NavLink to="/ask-me">
                                     <Button
                                         variant="contained"
                                         disableRipple
