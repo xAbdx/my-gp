@@ -3,7 +3,7 @@ import React from 'react';
 import { } from 'ai/react';
 import { useChat } from 'ai/react';
 import './Askme.css';
-import GPTLogo from '../../img/GPTLogo.tsx';
+// import GPTLogo from '../../img/GPTLogo.tsx';
 import ResponsiveAppBar from '../../components/Navbar/ResponsiveAppBar.js';
 // import { response } from 'express';
 // import Footer from "../../components/footer/footer";

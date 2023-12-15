@@ -9,10 +9,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import Logo from '../../img/logo.svg'
 import SendIcon from '@mui/icons-material/Send';
 import { useNavigate, NavLink } from "react-router-dom";
 import './ResponsiveAppBar.css';
+import IMAGES from '../../img/indexImg';
 
 const pages = [
     <NavLink to="/">Home</NavLink>,
@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
         <AppBar position="static" sx={{ bgcolor: "inherit" }} elevation={0} disableRipple>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <img class="logo" src={Logo} width="200px" alt="img" onClick={redirectLogo}></img>
+                    <img class="logo" src={IMAGES.Logo} width="200px" alt="img" onClick={redirectLogo}></img>
                     <Box className="root" sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <div></div>
                         <IconButton
