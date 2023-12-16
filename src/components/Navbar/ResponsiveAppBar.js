@@ -40,7 +40,7 @@ function ResponsiveAppBar() {
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <img class="logo" src={IMAGES.Logo} width="200px" alt="img" onClick={redirectLogo}></img>
-                    <Box className="root" sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                    <Box className="rooted" sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <div></div>
                         <IconButton
                             size="large"
@@ -79,7 +79,7 @@ function ResponsiveAppBar() {
                     <Box sx={{ flexGrow: 2, display: { xs: 'none', md: 'flex' } }}>
                         <div></div>
                     </Box>
-                    <Box className="root" sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+                    <Box className="rooted" sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
                         <ul class="links">
                             <li class="link"><NavLink
                                 className="link1"

@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-.root {
+.rooted {
     /* width: auto; */
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@ body {
 .links {
     list-style: none;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     margin: 0 60px 0 0;
 }
