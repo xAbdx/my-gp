@@ -3,12 +3,12 @@ import IbrahimiTwo from './IbrahimiTwo.jpg';
 import IbrahimiThree from './IbrahimiThree.jpg';
 import IbrahimiFour from './IbrahimiFour.jpg';
 import Logo from './Logo.svg';
-import FooterLogo from './FooterLogo.svg';
+import Footerlogo from './Footerlogo.svg';
 
 
 const IMAGES = {
     Logo,
-    FooterLogo,
+    Footerlogo,
     IbrahimiOne,
     IbrahimiTwo,
     IbrahimiThree,

@@ -9,7 +9,7 @@ function Footer() {
             <div class="footerWraper">
                 <div class="left">
                     <div class="content">
-                        <img class="footerlogo" src={IMAGES.FooterLogo} width="200px" alt="logo"></img>
+                        <img class="footerlogo" src={IMAGES.Footerlogo} width="200px" alt="logo"></img>
                         <p>Unlock Hebron's captivating past and vibrant present on immersive, unforgettable tours. Let us be your trusted guides to the heart of Hebron.</p>
                         <p class="copyRight">© 2023</p>
                     </div>
