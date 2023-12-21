@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Home.css';
 import ResponsiveAppBar from '../../components/Navbar/ResponsiveAppBar';
 import Arrow from '../../img/Arrow.svg';
@@ -54,10 +54,10 @@ const cards = [
     },
     {
         "title": "Plan B",
-        "time": "6 - 8 h",
+        "time": "2 - 3 h",
         "price": "750 $",
         "to": "/plan-b",
-        "actualTime": 8,
+        "actualTime": 2,
         "actualPrice": 750
     },
     {
@@ -71,6 +71,20 @@ const cards = [
 ]
 
 const Home = () => {
+    const [sortBy, setSortBy] = useState(null);
+    const handleSort = (property) => {
+        setSortBy(property);
+    };
+    const sortCards = (a, b) => {
+        if (sortBy === 'money') {
+            return a.actualPrice - b.actualPrice;
+        } else if (sortBy === 'time') {
+            return a.actualTime - b.actualTime;
+        }
+        return 0;
+    };
+
+
     const picnicRef = useRef();
     return (
         <div>
@@ -96,6 +110,7 @@ const Home = () => {
                                 <div class="sort">
                                     <span>Sort by</span>
                                     <Button
+                                        onClick={() => handleSort('money')}
                                         variant="contained"
                                         disableRipple
                                         size="small"
@@ -112,6 +127,7 @@ const Home = () => {
                                         Money
                                     </Button>
                                     <Button
+                                        onClick={() => handleSort('time')}
                                         variant="contained"
                                         disableRipple
                                         size="smaller"
@@ -147,6 +163,7 @@ const Home = () => {
                                     <div class="sort">
                                         <span>Sort by</span>
                                         <Button
+                                            onClick={() => handleSort('money')}
                                             variant="contained"
                                             disableRipple
                                             size="small"
@@ -163,6 +180,7 @@ const Home = () => {
                                             Money
                                         </Button>
                                         <Button
+                                            onClick={() => handleSort('time')}
                                             variant="contained"
                                             disableRipple
                                             size="smaller"
@@ -189,8 +207,15 @@ const Home = () => {
                 {/* Cards Section */}
                 <Box sx={{ display: { xs: 'flex', justifyContent: 'center' } }}>
                     <div class="cardSection">
-                        {cards.map((card) => (
-                            <Card sx={{ width: '250px', bgcolor: '#F8F8F8', margin: '40px 40px 40px 0', borderRadius: '10%', boxShadow: 0 }}>
+                        {cards.slice().sort(sortCards).map((card, index) => (
+                            <Card sx={{
+                                width: '250px',
+                                bgcolor: '#F8F8F8',
+                                margin: '40px 40px 40px 0',
+                                borderRadius: '10%',
+                                boxShadow: 0,
+                                animation: `fadeIn 0.5s ease ${index * 0.1}s both`,
+                            }}>
                                 <CardContent>
                                     <Typography variant="h3" component="div" sx={{
                                         display: 'flex',
