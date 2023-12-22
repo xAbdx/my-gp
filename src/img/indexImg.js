@@ -15,6 +15,18 @@ import Glassone from './Glass-1.jpg';
 import Glasstwo from './Glass-2.jpg';
 import Glassthree from './Glass-3.jpg';
 import Glassfour from './Glass-4.jpg';
+import Altakiyyaone from './Altakiyya-1.jpg';
+import Altakiyyatwo from './Altakiyya-2.jpg';
+import Altakiyyathree from './Altakiyya-3.jpg';
+import Altakiyyafour from './Altakiyya-4.jpg';
+import Almaskobiyaone from './Almaskobiya-1.jpg';
+import Almaskobiyatwo from './Almaskobiya-2.jpg';
+import Almaskobiyathree from './Almaskobiya-3.jpg';
+import Almaskobiyafour from './Almaskobiya-4.jpg';
+import Telrumeidaone from './Telrumeida-1.jpg';
+import Telrumeidatwo from './Telrumeida-2.jpg';
+import Telrumeidathree from './Telrumeida-3.jpg';
+import Telrumeidafour from './Telrumeida-4.jpg';
 
 const IMAGES = {
     Logo,
@@ -34,6 +46,18 @@ const IMAGES = {
     Glasstwo,
     Glassthree,
     Glassfour,
+    Altakiyyaone,
+    Altakiyyatwo,
+    Altakiyyathree,
+    Altakiyyafour,
+    Almaskobiyaone,
+    Almaskobiyatwo,
+    Almaskobiyathree,
+    Almaskobiyafour,
+    Telrumeidaone,
+    Telrumeidatwo,
+    Telrumeidathree,
+    Telrumeidafour,
 }
 
 export default IMAGES;

@@ -46,7 +46,7 @@ const mustVisit = [
 const cards = [
     {
         "title": "Plan A",
-        "time": "3 - 4 h",
+        "time": "4 - 5 h",
         "price": "10 $",
         "to": "/plan-a",
         "actualTime": 5,
@@ -54,11 +54,11 @@ const cards = [
     },
     {
         "title": "Plan B",
-        "time": "2 - 3 h",
-        "price": "750 $",
+        "time": "3 - 4 h",
+        "price": "Free",
         "to": "/plan-b",
-        "actualTime": 2,
-        "actualPrice": 750
+        "actualTime": 4,
+        "actualPrice": 0
     },
     {
         "title": "Plan C",

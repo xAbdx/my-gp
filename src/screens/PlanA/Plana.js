@@ -101,7 +101,7 @@ function Plana() {
                                 <p>Estimated time</p>
                                 <div className="leftIcon">
                                     <AccessTimeIcon sx={{ color: '#F96719' }} />
-                                    <p>3 to 4h</p>
+                                    <p>4 to 5h</p>
                                 </div>
                             </div>
                             <div className="RightC">
@@ -218,6 +218,9 @@ function Plana() {
                         />
                     </Box>
                 ))}
+            </div>
+            <div class="note">
+                <p><strong>note:</strong><br /><strong>1.</strong> you can modify the plan as you wish <br /><strong>2.</strong> put in mind the road could be crowded<br /><strong>3.</strong> the price might change simultaneously with your purchases</p>
             </div>
             {/* Footer Section */}
             <Footer />
