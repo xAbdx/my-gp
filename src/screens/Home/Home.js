@@ -54,19 +54,19 @@ const cards = [
     },
     {
         "title": "Plan B",
-        "time": "3 - 4 h",
+        "time": "5 - 6 h",
         "price": "Free",
         "to": "/plan-b",
-        "actualTime": 4,
+        "actualTime": 6,
         "actualPrice": 0
     },
     {
         "title": "Plan C",
         "time": "5 - 6 h",
-        "price": "400 $",
+        "price": "8 $",
         "to": "/plan-c",
-        "actualTime": 6,
-        "actualPrice": 400
+        "actualTime": 6.5,
+        "actualPrice": 8
     },
 ]
 

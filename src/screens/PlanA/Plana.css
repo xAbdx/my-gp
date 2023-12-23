@@ -59,10 +59,12 @@
 .pointer {
     cursor: pointer;
     margin: 30px 20px 0 20px;
+    border-radius: 5%;
 }
 
 .marginImg {
     margin: 0 0 20px 0;
+    border-radius: 2%;
 }
 
 .imgDiv {

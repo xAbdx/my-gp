@@ -43,11 +43,24 @@ const places = [
         ]
     },
     {
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364.7817750229023!2d35.10533274529724!3d31.52581759605345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502e5f595fa7009%3A0x8220bc0a838701a9!2z2YHZhtiv2YIg2YHZhNiz2LfZitmG!5e1!3m2!1sen!2s!4v1703346101610!5m2!1sen!2s",
+        "title": "Old City Museum",
+        "content": "Palestine Hotel is ahistorical building stands at the entrance of the Old City in Hebron, Every visitor entering or exiting the  Old City stands to admire its beauty, wondering about its history and use. in 1948 it did shut down due to the war and ethnic cleansing against the Palestinian, but in 14 October 2021, UNESCO and Hebron Rehabilitation Committee (HRC), celebrated the inauguration of the Old Hebron Museum after completing the rehabilitation of the abandoned historic building of “Palestine Hotel”.",
+        "price": "free",
+        "time": "30m",
+        images: [
+            IMAGES.Oldcitymuseumfour,
+            IMAGES.Oldcitymuseumone,
+            IMAGES.Oldcitymuseumthree,
+            IMAGES.Oldcitymuseumtwo,
+        ]
+    },
+    {
         "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d573.4361621249843!2d35.08514573737559!3d31.537373247933974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502e68032b08b7d%3A0x9036dbe92b030019!2zVGhlIENhdGhlZHJhbCBvZiB0aGUgSG9seSBUcmluaXR5IC0g2YPYp9iq2K_Ysdin2KbZitipINin2YTYq9in2YTZiNirINin2YTYo9mC2K_Ysw!5e1!3m2!1sen!2sus!4v1703202971932!5m2!1sen!2sus",
         "title": "Al Maskobiya",
-        "content": "The Church of the Holy Forefathers and Monastery of the Holy Trinity also known as Al Maskobiya, is a Russian Orthodox monastery and church in Hebron, Palestine, founded in the 20th century on the site of the ancient Oak of Mamre.",
+        "content": "A tranquil spot steeped in legend, believed to be where the prophet Abraham set up his tent. Embrace the serenity and reflect on the historical significance of this ancient tree, a symbol of enduring spirituality. and The Church of the Holy Forefathers and Monastery of the Holy Trinity also known as Al Maskobiya, is a Russian Orthodox monastery and church in Hebron, Palestine, founded in the 20th century on the site of the ancient Oak of Mamre.",
         "price": "free entry",
-        "time": "30m",
+        "time": "1h",
         images: [
             IMAGES.Almaskobiyaone,
             IMAGES.Almaskobiyatwo,
@@ -89,7 +102,7 @@ function Planb() {
                                 <p>Estimated time</p>
                                 <div className="leftIcon">
                                     <AccessTimeIcon sx={{ color: '#F96719' }} />
-                                    <p>3 to 4h</p>
+                                    <p>5 to 6h</p>
                                 </div>
                             </div>
                             <div className="RightC">
