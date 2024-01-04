@@ -74,7 +74,7 @@ export default function Home() {
         setQuestion('');
         setShowProgress(false);
     }
-    console.log(question);
+    // console.log(question);
 
     useEffect(() => {
         setTimeout(() => ref.current.scrollIntoView({ behavior: "smooth" }), 300)
