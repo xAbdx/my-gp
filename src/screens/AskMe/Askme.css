@@ -26,15 +26,9 @@
     margin-right: 20px;
 }
 
-::placeholder {
-    color: red;
-    opacity: 1;
-    /* Firefox */
-}
 
 @media only screen and (max-width: 750px) {
     .askMe {
         width: 90%;
-        /* margin: 0 20px; */
     }
 }

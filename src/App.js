@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './screens/Home/Home'
-import Askme from './screens/AskMe/Askme.jsx'
+import Askme from './screens/AskMe/Askme'
 import Plana from './screens/PlanA/Plana'
 import Planb from './screens/PlanB/Planb'
 import Planc from './screens/PlanC/Planc'
