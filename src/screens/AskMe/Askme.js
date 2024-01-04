@@ -22,63 +22,63 @@ export default function Home() {
     const [showProgress, setShowProgress] = useState(false);
     const ref = useRef();
 
-    const handleEnterKeyPress = (e) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            callOpenAIAPI();
-        }
-    };
+    // const handleEnterKeyPress = (e) => {
+    //     if (e.key === 'Enter') {
+    //         e.preventDefault();
+    //         callOpenAIAPI();
+    //     }
+    // };
 
-    async function callOpenAIAPI() {
-        if (question.trim() === '') {
-            return; // Do nothing if the question is empty or contains only whitespace
-        }
+    // async function callOpenAIAPI() {
+    //     if (question.trim() === '') {
+    //         return; // Do nothing if the question is empty or contains only whitespace
+    //     }
 
-        // console.log("calling the api");
-        setShowProgress(true); // Show CircularProgress
+    //     // console.log("calling the api");
+    //     setShowProgress(true); // Show CircularProgress
 
-        const APIBody = {
-            model: 'gpt-3.5-turbo',
-            messages: [
-                {
-                    "role": "user",
-                    "content": question
-                }
-            ],
-            temperature: 1,
-            max_tokens: 256,
-            top_p: 1,
-            frequency_penalty: 0,
-            presence_penalty: 0,
-        };
+    //     const APIBody = {
+    //         model: 'gpt-3.5-turbo',
+    //         messages: [
+    //             {
+    //                 "role": "user",
+    //                 "content": question
+    //             }
+    //         ],
+    //         temperature: 1,
+    //         max_tokens: 256,
+    //         top_p: 1,
+    //         frequency_penalty: 0,
+    //         presence_penalty: 0,
+    //     };
 
-        const text = question;
-        await fetch("https://api.openai.com/v1/chat/completions", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": "Bearer " + API_KEY,
-            },
-            body: JSON.stringify(APIBody),
-        }).then((data) => {
-            return data.json();
-        }).then((data) => {
-            // console.log(data);
-            const apiResponse = data.choices[0].message.content;
-            setResponse([
-                ...response,
-                { text: text, isUser: true },
-                { text: apiResponse, isUser: false },
-            ])
-        });
-        setQuestion('');
-        setShowProgress(false);
-    }
+    //     const text = question;
+    //     await fetch("https://api.openai.com/v1/chat/completions", {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-Type": "application/json",
+    //             "Authorization": "Bearer " + API_KEY,
+    //         },
+    //         body: JSON.stringify(APIBody),
+    //     }).then((data) => {
+    //         return data.json();
+    //     }).then((data) => {
+    //         // console.log(data);
+    //         const apiResponse = data.choices[0].message.content;
+    //         setResponse([
+    //             ...response,
+    //             { text: text, isUser: true },
+    //             { text: apiResponse, isUser: false },
+    //         ])
+    //     });
+    //     setQuestion('');
+    //     setShowProgress(false);
+    // }
     // console.log(question);
 
-    useEffect(() => {
-        setTimeout(() => ref.current.scrollIntoView({ behavior: "smooth" }), 300)
-    }, [response])
+    // useEffect(() => {
+    //     setTimeout(() => ref.current.scrollIntoView({ behavior: "smooth" }), 300)
+    // }, [response])
 
 
     return (
@@ -88,18 +88,7 @@ export default function Home() {
                 <Paper elevation={0} sx={{ pb: '50px', bgcolor: "#393b46" }}>
                     <div class="askMeDiv">
                         <div class="askMe">
-                            {response.map((m, index) => (
-                                <div key={index} class="contentReq">
-                                    <br />
-                                    <div class="avatar">
-                                        <Avatar sx={{ bgcolor: "#673ab7" }}>{m.isUser ? "Y" : <Gptlogo />}</Avatar>
-                                    </div>
-                                    <div>
-                                        <span><strong>{m.isUser ? "You" : "ChatGPT"}</strong></span>
-                                        <p>{m.text}</p>
-                                    </div>
-                                </div>
-                            ))}
+
                             <div ref={ref}></div>
                         </div>
                         {showProgress && <CircularProgress />} {/* Show CircularProgress conditionally */}
@@ -126,7 +115,7 @@ export default function Home() {
                         <TextField
                             value={question}
                             onChange={(e) => setQuestion(e.target.value)}
-                            onKeyDown={handleEnterKeyPress} // Call the function on key down
+                            // onKeyDown={handleEnterKeyPress} // Call the function on key down
                             placeholder='Ask me'
                             sx={{
                                 width: '100%',
@@ -138,7 +127,9 @@ export default function Home() {
                                     <InputAdornment position="end">
                                         <Tooltip title="Send message" placement="top" arrow>
                                             <IconButton sx={{ color: "#e0e0ec" }}>
-                                                <SendIcon onClick={callOpenAIAPI} />
+                                                <SendIcon
+                                                // onClick={callOpenAIAPI}
+                                                />
                                             </IconButton>
                                         </Tooltip>
                                     </InputAdornment>
@@ -150,3 +141,16 @@ export default function Home() {
         </div>
     )
 }
+
+// {response.map((m, index) => (
+//     <div key={index} class="contentReq">
+//         <br />
+//         <div class="avatar">
+//             <Avatar sx={{ bgcolor: "#673ab7" }}>{m.isUser ? "Y" : <Gptlogo />}</Avatar>
+//         </div>
+//         <div>
+//             <span><strong>{m.isUser ? "You" : "ChatGPT"}</strong></span>
+//             <p>{m.text}</p>
+//         </div>
+//     </div>
+// ))}
