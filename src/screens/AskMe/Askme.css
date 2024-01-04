@@ -1,0 +1,31 @@
+.askMeContainer {
+    background-color: #393b46;
+    min-height: 100vh;
+}
+
+.askMe {
+    color: #D9D9E3;
+    width: 50%;
+}
+
+.askMeDiv {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 90px;
+}
+
+.contentReq {
+    display: flex;
+    margin: 25px 0;
+}
+
+.avatar {
+    margin-right: 20px;
+}
+
+.content {
+    width: 80%;
+}

@@ -3,6 +3,7 @@ import IbrahimiTwo from './IbrahimiTwo.jpg';
 import IbrahimiThree from './IbrahimiThree.jpg';
 import IbrahimiFour from './IbrahimiFour.jpg';
 import Logo from './Logo.svg';
+import Askmenavlogo from './Askmenavlogo.svg';
 import Footerlogo from './Footerlogo.svg';
 import Oldcityone from './oldCity-1.jpg';
 import Oldcitytwo from './oldCity-2.jpg';
@@ -46,6 +47,7 @@ import Alshuhadastreetfour from './Alshuhadastreet-4.jpg';
 
 const IMAGES = {
     Logo,
+    Askmenavlogo,
     Footerlogo,
     IbrahimiOne,
     IbrahimiTwo,
