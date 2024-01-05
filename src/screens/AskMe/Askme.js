@@ -96,7 +96,7 @@ export default function Home() {
                                         <Avatar sx={{ bgcolor: "#555666" }}>{m.isUser ? <AccountCircleIcon sx={{ color: "#e0e0ec" }} /> : <ChatIcon sx={{ color: "#19c37d" }} />}</Avatar>
                                     </div>
                                     <div>
-                                        <span><strong>{m.isUser ? "You" : "ChatGPT"}</strong></span>
+                                        <span><strong>{m.isUser ? "You" : "AI Guide"}</strong></span>
                                         <p>{m.text}</p>
                                     </div>
                                 </div>
