@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import * as React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Planb.css';
 import ResponsiveAppBar from '../../components/Navbar/ResponsiveAppBar';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
@@ -73,6 +73,7 @@ const places = [
 function Planb() {
     const [openStates, setOpenStates] = React.useState(places.map(() => false));
     const [selectedPlaceIndex, setSelectedPlaceIndex] = React.useState(null);
+    const ref = useRef();
 
     const handleOpen = (index) => {
         setOpenStates((prevStates) =>
@@ -88,9 +89,14 @@ function Planb() {
         setSelectedPlaceIndex(null);
     };
 
+    useEffect(() => {
+        setTimeout(() => ref.current.scrollIntoView({ behavior: "smooth" }), 100)
+    }, [])
+
     return (
         <div className="rootBg">
             {/* Navbar */}
+            <div ref={ref}></div>
             <ResponsiveAppBar />
             {/* hero Section */}
             <div className="containerSections">
@@ -221,7 +227,7 @@ function Planb() {
                 ))}
             </div>
             <div class="note">
-                <p><strong>note:</strong><br /><strong>1.</strong> you can modify the plan as you wish <br /><strong>2.</strong> put in mind the road could be crowded<br /><strong>3.</strong> the price might change simultaneously with your purchases</p>
+                <p><strong>note:</strong><br /><strong>1.</strong> The time to complete the trip might vary depending on the traffic conditions<br /><strong>2.</strong> The suggested listed prices reflect the booking fees and does not necessarily include any additional purchase.</p>
             </div>
             {/* Footer Section */}
             <Footer />
