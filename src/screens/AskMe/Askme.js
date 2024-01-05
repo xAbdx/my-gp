@@ -3,7 +3,6 @@ import './Askme.css';
 import AskmeNav from '../../components/AskmeNav/AskmeNav.js';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import Gptlogo from '../../components/Gptlogo.tsx';
 import IconButton from '@mui/material/IconButton';
 import SendIcon from '@mui/icons-material/Send';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -12,6 +11,8 @@ import AppBar from '@mui/material/AppBar';
 import Paper from '@mui/material/Paper';
 import CircularProgress from '@mui/material/CircularProgress';
 import Tooltip from '@mui/material/Tooltip';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import ChatIcon from '@mui/icons-material/Chat';
 
 const API_KEY = process.env.REACT_APP_MY_OPENAI_KEY;
 
@@ -92,7 +93,7 @@ export default function Home() {
                                 <div key={index} class="contentReq">
                                     <br />
                                     <div class="avatar">
-                                        <Avatar sx={{ bgcolor: "#673ab7" }}>{m.isUser ? "Y" : <Gptlogo />}</Avatar>
+                                        <Avatar sx={{ bgcolor: "#555666" }}>{m.isUser ? <AccountCircleIcon sx={{ color: "#e0e0ec" }} /> : <ChatIcon sx={{ color: "#19c37d" }} />}</Avatar>
                                     </div>
                                     <div>
                                         <span><strong>{m.isUser ? "You" : "ChatGPT"}</strong></span>

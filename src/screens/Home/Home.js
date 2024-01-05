@@ -208,61 +208,62 @@ const Home = () => {
                 <Box sx={{ display: { xs: 'flex', justifyContent: 'center' } }}>
                     <div class="cardSection">
                         {cards.slice().sort(sortCards).map((card, index) => (
-                            <Card sx={{
-                                width: '250px',
-                                bgcolor: '#F8F8F8',
-                                margin: '40px 40px 40px 0',
-                                borderRadius: '10%',
-                                boxShadow: 0,
-                                animation: `fadeIn 0.5s ease ${index * 0.1}s both`,
-                            }}>
-                                <CardContent>
-                                    <Typography variant="h3" component="div" sx={{
-                                        display: 'flex',
-                                        justifyContent: 'center',
-                                        alignItems: 'center',
-                                        fontWeight: 'bold',
-                                    }}>
-                                        <TravelExploreIcon fontSize="larger" sx={{ color: '#463DCF' }} />
-                                        {card.title}
-                                    </Typography>
-                                    <div class="cardCards">
-                                        <div class="cardItem">
-                                            <CardContent sx={{ bgcolor: '#F1F1F1', borderRadius: '10%' }}>
-                                                <Typography variant="body2" component="div" sx={{
-                                                    display: 'flex',
-                                                    justifyContent: 'center',
-                                                    alignItems: 'center',
-                                                    flexDirection: 'column',
-                                                    fontWeight: 'bold'
-                                                }}>
-                                                    <AccessTimeIcon sx={{ color: '#F96719' }} />
-                                                    {card.time}
-                                                </Typography>
-                                            </CardContent>
+                            <div className="marginDiv">
+                                <Card sx={{
+                                    width: '250px',
+                                    bgcolor: '#F8F8F8',
+                                    borderRadius: '10%',
+                                    boxShadow: 0,
+                                    animation: `fadeIn 0.5s ease ${index * 0.1}s both`,
+                                }}>
+                                    <CardContent>
+                                        <Typography variant="h3" component="div" sx={{
+                                            display: 'flex',
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                            fontWeight: 'bold',
+                                        }}>
+                                            <TravelExploreIcon fontSize="larger" sx={{ color: '#463DCF' }} />
+                                            {card.title}
+                                        </Typography>
+                                        <div class="cardCards">
+                                            <div class="cardItem">
+                                                <CardContent sx={{ bgcolor: '#F1F1F1', borderRadius: '10%' }}>
+                                                    <Typography variant="body2" component="div" sx={{
+                                                        display: 'flex',
+                                                        justifyContent: 'center',
+                                                        alignItems: 'center',
+                                                        flexDirection: 'column',
+                                                        fontWeight: 'bold'
+                                                    }}>
+                                                        <AccessTimeIcon sx={{ color: '#F96719' }} />
+                                                        {card.time}
+                                                    </Typography>
+                                                </CardContent>
+                                            </div>
+                                            <div class="cardItem">
+                                                <CardContent sx={{ bgcolor: '#F1F1F1', borderRadius: '10%' }}>
+                                                    <Typography variant="body2" component="div" sx={{
+                                                        display: 'flex',
+                                                        justifyContent: 'center',
+                                                        alignItems: 'center',
+                                                        flexDirection: 'column',
+                                                        fontWeight: 'bold'
+                                                    }}>
+                                                        <PointOfSaleIcon sx={{ color: '#43A047' }} />
+                                                        {card.price}
+                                                    </Typography>
+                                                </CardContent>
+                                            </div>
                                         </div>
-                                        <div class="cardItem">
-                                            <CardContent sx={{ bgcolor: '#F1F1F1', borderRadius: '10%' }}>
-                                                <Typography variant="body2" component="div" sx={{
-                                                    display: 'flex',
-                                                    justifyContent: 'center',
-                                                    alignItems: 'center',
-                                                    flexDirection: 'column',
-                                                    fontWeight: 'bold'
-                                                }}>
-                                                    <PointOfSaleIcon sx={{ color: '#43A047' }} />
-                                                    {card.price}
-                                                </Typography>
-                                            </CardContent>
-                                        </div>
-                                    </div>
-                                </CardContent>
-                                <CardActions sx={{ justifyContent: 'end' }}>
-                                    <NavLink to={card.to}>
-                                        <Button size="small" endIcon={<ChevronRightIcon />}>Learn More </Button>
-                                    </NavLink>
-                                </CardActions>
-                            </Card>
+                                    </CardContent>
+                                    <CardActions sx={{ justifyContent: 'end' }}>
+                                        <NavLink to={card.to}>
+                                            <Button size="small" endIcon={<ChevronRightIcon />}>Learn More </Button>
+                                        </NavLink>
+                                    </CardActions>
+                                </Card>
+                            </div>
                         ))}
                     </div>
                 </Box>
